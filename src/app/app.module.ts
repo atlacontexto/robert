@@ -10,6 +10,8 @@ import { MenuPage } from '../pages/menu/menu';
 import { MenuPageModule } from '../pages/menu/menu.module';
 import { JogarPageModule } from '../pages/jogar/jogar.module';
 import { JogarPage } from '../pages/jogar/jogar';
+import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
+import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 
 @NgModule({
   declarations: [
@@ -20,14 +22,16 @@ import { JogarPage } from '../pages/jogar/jogar';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     MenuPageModule,
-    JogarPageModule
+    JogarPageModule,
+    ConfiguracoesPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     MenuPage,
-    JogarPage
+    JogarPage,
+    ConfiguracoesPage
   ],
   providers: [
     StatusBar,

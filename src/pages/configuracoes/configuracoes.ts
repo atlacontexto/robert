@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { JogarPage } from '../jogar/jogar';
 
 /**
- * Generated class for the MenuPage page.
+ * Generated class for the ConfiguracoesPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { JogarPage } from '../jogar/jogar';
 
 @IonicPage()
 @Component({
-  selector: 'page-menu',
-  templateUrl: 'menu.html',
+  selector: 'page-configuracoes',
+  templateUrl: 'configuracoes.html',
 })
-export class MenuPage {
+export class ConfiguracoesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MenuPage');
-  }
-
-  private openPage(page) {
-    this.navCtrl.push(page);
+    console.log('ionViewDidLoad ConfiguracoesPage');
   }
 
 }
