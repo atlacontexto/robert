@@ -22,4 +22,7 @@ export class ConfiguracoesPage {
     console.log('ionViewDidLoad ConfiguracoesPage');
   }
 
+  private openPage(page) {
+    this.navCtrl.push(page);
+  }
 }
