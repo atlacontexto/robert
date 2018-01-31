@@ -14,5 +14,32 @@
 
 
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row *ngFor="let campanha of Campanhas">
+      <ion-col>
+        <button ion-button>{{ campanha }}</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer>
+
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button>
+        Fácil
+      </ion-segment-button>
+
+      <ion-segment-button>
+        Médio
+      </ion-segment-button>
+
+      <ion-segment-button>
+        Dificil
+      </ion-segment-button>
+    </ion-segment>
+
+
+  </ion-toolbar>
+</ion-footer>
