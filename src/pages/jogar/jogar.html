@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<!-- <ion-content padding>
   <ion-grid>
     <ion-row *ngFor="let campanha of Campanhas">
       <ion-col>
@@ -21,11 +21,27 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+</ion-content> -->
+
+<ion-content>
+  <ion-list radio-group>
+    <ion-list-header>
+      Campanhas
+    </ion-list-header>
+
+    <ion-item *ngFor="let campanha of Campanhas">
+      <ion-label>{{ campanha }}</ion-label>
+      <ion-radio checked="false" ></ion-radio>
+    </ion-item>
+
+    
+  </ion-list>
 </ion-content>
 
 <ion-footer>
 
   <ion-toolbar>
+    <!-- Podemos usar ConfirmationsAlert quando for clicado em um dos níveis   -->
     <ion-segment>
       <ion-segment-button>
         Fácil
