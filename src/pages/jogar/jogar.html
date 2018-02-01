@@ -26,12 +26,12 @@
 <ion-content>
   <ion-list radio-group>
     <ion-list-header>
-      Campanhas
+      Selecione uma Campanha!
     </ion-list-header>
 
     <ion-item *ngFor="let campanha of Campanhas">
       <ion-label>{{ campanha }}</ion-label>
-      <ion-radio checked="false" ></ion-radio>
+      <ion-radio checked="false" value="{{ campanha }}"></ion-radio>
     </ion-item>
 
     
@@ -43,15 +43,15 @@
   <ion-toolbar>
     <!-- Podemos usar ConfirmationsAlert quando for clicado em um dos níveis   -->
     <ion-segment>
-      <ion-segment-button>
+      <ion-segment-button (click)="presentConfirm()" value="facil">
         Fácil
       </ion-segment-button>
 
-      <ion-segment-button>
+      <ion-segment-button (click)="presentConfirm()" value="medio">
         Médio
       </ion-segment-button>
 
-      <ion-segment-button>
+      <ion-segment-button (click)="presentConfirm()" value="dificil">
         Dificil
       </ion-segment-button>
     </ion-segment>
