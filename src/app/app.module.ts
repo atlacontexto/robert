@@ -20,7 +20,13 @@ import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,{
+      platforms: {
+        ios: {
+          backButtonText: 'Voltar',
+        }
+      }
+    }),
     MenuPageModule,
     JogarPageModule,
     ConfiguracoesPageModule
